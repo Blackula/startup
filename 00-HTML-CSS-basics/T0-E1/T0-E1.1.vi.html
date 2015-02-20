@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		<meta charset = "utf-8"/>
+		<meta name = "description" content = 'A .html file with a basic "sign up" form.'/>
+		<title>Topic 0: Exercise 1.vi</title>
+	</head>
+	<body>
+		<form id = "signup-form" action = "script.php" method = "post">
+			<ul>
+				<li><label for = "fname">First name:</label> <input type = "text" name = "fname" id = "fname" value = "" placeholder = "John" required/></li>
+				<li><label for = "lname">Last name:</label> <input type = "text" name = "lname" id = "lname" value = "" placeholder = "Doe" required/></li>
+				<li><label for = "email">Email:</label> <input type = "email" name = "email" id = "email" value = "" placeholder = "example@mail-server.com" required/></li>
+				<li><label for = "pwd">Password:</label> <input type = "password" name = "pwd" id = "pwd" value = "" required/></li>
+				<!--type = "date" is not supported by Mozilla Firefox or by IE-->
+				<li><label for = "dobirth">Date of birth:</label> <input type = "text" name = "dobirth" id = "dobirth" value = "" placeholder= "mm/dd/yyyy" pattern= "^(?=\d{2}([-.,\/])\d{2}\1\d{4}$)(?:0[1-9]|1\d|[2][0-8]|29(?!.02.(?!(?!(?:[02468][1-35-79]|[13579][0-13-57-9])00)\d{2}(?:[02468][048]|[13579][26])))|30(?!.02)|31(?=.(?:0[13578]|10|12))).(?:0[1-9]|1[012]).\d{4}$" required/></li>
+				<li><label for = "sport">Favorite sport:</label> <input type = "text" name = "sport" id = "sport" value = "" placeholder = "Select sport" list = "lsport"/>
+	  				<datalist id="lsport">
+						<option value = "Basketball">
+						<option value = "Football">
+						<option value = "Handball">
+						<option value = "Hockey">
+						<option value = "Rugby">
+						<option value = "Soccer">
+					</datalist></li>
+				<li><label for = "bio">Bio:</label> <textarea name = "bio" id = "bio" cols = "25" rows = "3" placeholder = "Tell us something about you"></textarea></li>
+			</ul>
+			<ul>
+				<li>
+		            <input type="submit" value="Submit" />
+		            <input type="reset" value="Reset" />
+        		</li>
+			</ul>
+		</form>
+	</body>
+</html>

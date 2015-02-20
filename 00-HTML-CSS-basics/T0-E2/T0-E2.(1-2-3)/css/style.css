@@ -1,0 +1,56 @@
+html
+{
+	font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+body > :not(section)
+{
+	background-color: #2f4172;
+	color: white;
+}
+
+[class$= "r"]
+{
+	background-color: magenta;
+}
+
+[class*= "a"]:not([class$= "r"]) {
+    background-color: blue;
+}
+
+header,
+footer
+{
+	text-align: center;
+}
+
+.header
+{
+	font-size: 46px;
+}
+
+.navigation
+{
+	font-size: 12px;
+}
+
+.sidebar
+{
+	font-size: 10px;
+}
+
+.footer
+{
+	font-size: 10px;
+}
+
+/*################*/
+/*#Exercise 2.3.7#*/
+/*################*/
+
+.oh-no-inline-styles
+{
+	background: green!important;
+}
+
